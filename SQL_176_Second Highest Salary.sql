@@ -19,3 +19,6 @@ FROM (
     ORDER BY salary DESC
     LIMIT 2) AS E, T
 WHERE E.salary != T.salary
+
+-- select max(salary) as SecondHighestSalary from Employee
+-- where salary not in (select max(salary) from Employee);
